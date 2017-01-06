@@ -14,6 +14,12 @@
 		570805661C7C901400D679B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570805641C7C901400D679B3 /* LaunchScreen.storyboard */; };
 		570805711C7C901400D679B3 /* SuperDuckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570805701C7C901400D679B3 /* SuperDuckTests.swift */; };
 		5708057C1C7C901400D679B3 /* SuperDuckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5708057B1C7C901400D679B3 /* SuperDuckUITests.swift */; };
+		5708058B1C7C920200D679B3 /* Duck.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 570805891C7C920200D679B3 /* Duck.atlasc */; };
+		5708058C1C7C920200D679B3 /* Duck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5708058A1C7C920200D679B3 /* Duck.swift */; };
+		5708058E1C7C923800D679B3 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5708058D1C7C923800D679B3 /* GameScene.swift */; };
+		57DC0F421C8BF84D00B0A190 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC0F411C8BF84D00B0A190 /* Background.swift */; };
+		57DC0F441C8C02CE00B0A190 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC0F431C8C02CE00B0A190 /* Score.swift */; };
+		57DC0F461C8C1A8900B0A190 /* Sprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC0F451C8C1A8900B0A190 /* Sprite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		570805771C7C901400D679B3 /* SuperDuckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperDuckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5708057B1C7C901400D679B3 /* SuperDuckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperDuckUITests.swift; sourceTree = "<group>"; };
 		5708057D1C7C901400D679B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		570805891C7C920200D679B3 /* Duck.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Duck.atlasc; sourceTree = "<group>"; };
+		5708058A1C7C920200D679B3 /* Duck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Duck.swift; sourceTree = "<group>"; };
+		5708058D1C7C923800D679B3 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		57DC0F411C8BF84D00B0A190 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		57DC0F431C8C02CE00B0A190 /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		57DC0F451C8C1A8900B0A190 /* Sprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sprite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,10 @@
 		5708055A1C7C901400D679B3 /* SuperDuck */ = {
 			isa = PBXGroup;
 			children = (
+				57DC0F401C8BF81F00B0A190 /* Play */,
+				570805891C7C920200D679B3 /* Duck.atlasc */,
+				5708058A1C7C920200D679B3 /* Duck.swift */,
+				5708058D1C7C923800D679B3 /* GameScene.swift */,
 				5708055B1C7C901400D679B3 /* AppDelegate.swift */,
 				5708055D1C7C901400D679B3 /* ViewController.swift */,
 				5708055F1C7C901400D679B3 /* Main.storyboard */,
@@ -123,6 +139,16 @@
 				5708057D1C7C901400D679B3 /* Info.plist */,
 			);
 			path = SuperDuckUITests;
+			sourceTree = "<group>";
+		};
+		57DC0F401C8BF81F00B0A190 /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				57DC0F411C8BF84D00B0A190 /* Background.swift */,
+				57DC0F431C8C02CE00B0A190 /* Score.swift */,
+				57DC0F451C8C1A8900B0A190 /* Sprite.swift */,
+			);
+			name = Play;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,21 +214,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = byuli;
 				TargetAttributes = {
 					570805571C7C901400D679B3 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 7CGA4PLZ2S;
+						LastSwiftMigration = 0800;
 					};
 					5708056B1C7C901400D679B3 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 7CGA4PLZ2S;
+						LastSwiftMigration = 0800;
 						TestTargetID = 570805571C7C901400D679B3;
 					};
 					570805761C7C901400D679B3 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 7CGA4PLZ2S;
+						LastSwiftMigration = 0800;
 						TestTargetID = 570805571C7C901400D679B3;
 					};
 				};
@@ -232,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5708058B1C7C920200D679B3 /* Duck.atlasc in Resources */,
 				570805661C7C901400D679B3 /* LaunchScreen.storyboard in Resources */,
 				570805631C7C901400D679B3 /* Assets.xcassets in Resources */,
 				570805611C7C901400D679B3 /* Main.storyboard in Resources */,
@@ -261,6 +291,11 @@
 			files = (
 				5708055E1C7C901400D679B3 /* ViewController.swift in Sources */,
 				5708055C1C7C901400D679B3 /* AppDelegate.swift in Sources */,
+				5708058E1C7C923800D679B3 /* GameScene.swift in Sources */,
+				5708058C1C7C920200D679B3 /* Duck.swift in Sources */,
+				57DC0F461C8C1A8900B0A190 /* Sprite.swift in Sources */,
+				57DC0F441C8C02CE00B0A190 /* Score.swift in Sources */,
+				57DC0F421C8BF84D00B0A190 /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,8 +363,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -372,8 +409,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -392,6 +431,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -404,6 +444,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = byuli.SuperDuck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -415,6 +457,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = byuli.SuperDuck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -426,6 +470,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = byuli.SuperDuckTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperDuck.app/SuperDuck";
 			};
 			name = Debug;
@@ -438,6 +483,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = byuli.SuperDuckTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperDuck.app/SuperDuck";
 			};
 			name = Release;
@@ -445,10 +491,12 @@
 		570805871C7C901400D679B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 7CGA4PLZ2S;
 				INFOPLIST_FILE = SuperDuckUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = byuli.SuperDuckUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SuperDuck;
 				USES_XCTRUNNER = YES;
 			};
@@ -457,10 +505,12 @@
 		570805881C7C901400D679B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 7CGA4PLZ2S;
 				INFOPLIST_FILE = SuperDuckUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = byuli.SuperDuckUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SuperDuck;
 				USES_XCTRUNNER = YES;
 			};
@@ -485,6 +535,7 @@
 				570805821C7C901400D679B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		570805831C7C901400D679B3 /* Build configuration list for PBXNativeTarget "SuperDuckTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +544,7 @@
 				570805851C7C901400D679B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		570805861C7C901400D679B3 /* Build configuration list for PBXNativeTarget "SuperDuckUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +553,7 @@
 				570805881C7C901400D679B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
